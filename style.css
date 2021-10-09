@@ -118,6 +118,7 @@ th {
 #mainarea {
     text-align:center;
 	display: flex;
+    overflow:hidden;
 }
 
 .sidenav a {  
@@ -129,7 +130,7 @@ th {
   border-style: inset;
   margin-right:85%;
     background-color: rgba(255, 34, 85, 0.2);
-	float:left;
+	
 }
 
 .sidenav a:hover {
@@ -140,3 +141,7 @@ th {
 	padding: 14px 16px;
 }
 
+.centerarea {
+    margin-right:25%;
+    float:right;
+}
