@@ -10,11 +10,17 @@
    </head>
 
    <body>
+         <script>
+            const hide = () => {
+                  let btn = document.getElementById('collapse')
+                  btn.value === "hide" ? btn.value = 'show' : btn.value = 'hide'
+            }
+         </script>
       <div class="mainarea" style="border-style: solid;margin-left:25%;margin-right:25%;margin-top:5%">
       <center><h2 style="color:#f25;text-align:center;font-size:xxx-large;background-color:rgba(235,34,85,0.4);">Home Page</h2></center>
   <div class="centerarea"><h3>sample text
 </h3></div><div class="sidenav" style="margin-left:25px;margin-bottom:20%;">
-            <button class="collapse" style="border-radius:10px;"><i>hide</i></button>
+            <button onclick="hide()" class="collapse" style="border-radius:10px;"><i>hide</i></button>
   <a class="links" href="https://vistril.github.io/cs-2350-asgn1-recipe/">Assignment 1</a>
   <a class="links" href="https://vistril.github.io/cs-2350-asgn2-county/">Assignment 2</a>
   <a class="links" href="#">Assignment 3</a>
