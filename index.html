@@ -14,11 +14,11 @@
             const hide = () => {
                   let btn = document.getElementById('collapse')
                   let sidenav = document.getElementById('sd')
-                  if (btn.value === hide) {
-                        btn.value = 'show'
+                  if (btn.innerText === hide) {
+                        btn.innerText = 'show'
                         sidenav.style.display = 'none'
                   } else {
-                        btn.value = 'hide'
+                        btn.innerText = 'hide'
                         sidenav.style.display = 'block'
                   }
             }
@@ -27,7 +27,7 @@
       <center><h2 style="color:#f25;text-align:center;font-size:xxx-large;background-color:rgba(235,34,85,0.4);">Home Page</h2></center>
   <div class="centerarea"><h3>sample text
 </h3></div><div class="sidenav" id = "sd" style="margin-left:25px;margin-bottom:20%;">
-            <button onclick="hide()" id="collapse" style="border-radius:10px;" value="hide"></button>
+            <button onclick="hide()" id="collapse" style="border-radius:10px;" value="hide">hide</button>
   <a class="links" href="https://vistril.github.io/cs-2350-asgn1-recipe/">Assignment 1</a>
   <a class="links" href="https://vistril.github.io/cs-2350-asgn2-county/">Assignment 2</a>
   <a class="links" href="#">Assignment 3</a>
